@@ -1,0 +1,51 @@
+body {
+    margin: 1rem auto;
+    width: 80%;
+}
+.header {
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation li {
+    margin: 1rem;
+    list-style: none;
+    background-color: darkgray;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.banner {
+    position: relative;
+    color: red;
+    text-align: center;
+}
+
+.search {
+    display: block;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.details {
+    width: 3rem;
+    background-color: bisque;
+    padding: 1rem;
+}
+
+
