@@ -4,12 +4,14 @@ body {
 }
 .header {
     display: flex;
-    background-color: aqua;
+    background-color: #3D81BF;
     align-items: center;
 }
 
 .navigation {
-    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4rem;
 }
 
 .navigation ul {
@@ -17,11 +19,11 @@ body {
 }
 
 .navigation li {
-    margin: 1rem;
+    margin: 0 6rem;
     list-style: none;
-    background-color: darkgray;
-    padding: .5rem;
-    border-radius: .5rem;
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: .7rem;
 }
 
 .banner {
@@ -61,6 +63,33 @@ body {
     padding-bottom: 3rem;
     margin: 3rem auto;
     align-self: center;
+}
+
+.review {
+    background-color: lightgrey;
+    width: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: 17rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.para {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: #3D81BF;
+    margin-top: 1rem;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.container {
+    margin: 1rem;
 }
 
 @media only screen and (min-width: 678px) {
