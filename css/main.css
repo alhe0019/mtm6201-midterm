@@ -8,6 +8,7 @@ body {
     align-items: center;
 }
 
+/* I used flex box role to make the navigation menu responsive */
 .navigation {
     display: flex;
     justify-content: space-around;
@@ -36,6 +37,7 @@ body {
     width: 100%;
 }
 
+/* Styling search box */
 .search {
     display: block;
     width: 70%;
@@ -43,6 +45,7 @@ body {
     kefooo
 }
 
+/* This shows the container cards */
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,6 +55,7 @@ body {
     width: 75%;
 }
 
+/* This a single card car */
 .card {
     text-align: center;
 }
@@ -88,10 +92,12 @@ body {
     font-size: 3rem;
 }
 
+/* This container styles the vehicles page cars */
 .container {
     margin: 1rem;
 }
 
+/* I used flexbox to arrange the card items in horizental direction  */
 .vehcard {
     display: flex;
     align-items: center;
@@ -103,8 +109,11 @@ body {
     margin-right: 1rem;
 }
 
+/* Styling the contact page */
+/* I used the grid to arrange the form elements below each other */
 .form {
     display: grid;
+    transition: opacity 1s linear;
 }
 
 .form input {
@@ -118,6 +127,37 @@ body {
     background-color: lightgray;
 }
 
+/* This animates the form */
+@keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .form {  
+    /* This role makes the from slide from left*/
+    animation: 1s ease-out 0s 1 slide;
+    padding: 30px;
+  }
+
+/*This section fades in the banner's image*/
+  @keyframes fadeIn {
+    0% {
+        opacity: .1;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  
+  .anibanner {
+       animation: 2s ease-out 0s 1 fadeIn;
+  }
+
+  /* This section for the media query to make the site responsive  */
 @media only screen and (min-width: 678px) {
     .banner img {
         width: 80%;
