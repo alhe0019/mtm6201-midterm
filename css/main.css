@@ -92,6 +92,32 @@ body {
     margin: 1rem;
 }
 
+.vehcard {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.vehcard img {
+    margin-right: 1rem;
+}
+
+.form {
+    display: grid;
+}
+
+.form input {
+    margin: 1rem 0;
+    background-color: lightgray;
+    padding: 1rem;
+    width: 60%;
+}
+
+.form textarea {
+    background-color: lightgray;
+}
+
 @media only screen and (min-width: 678px) {
     .banner img {
         width: 80%;
