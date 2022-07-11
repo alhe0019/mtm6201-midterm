@@ -1,6 +1,6 @@
 body {
     margin: 1rem auto;
-    width: 80%;
+    width: 90%;
 }
 .header {
     display: flex;
@@ -30,6 +30,10 @@ body {
     text-align: center;
 }
 
+.banner img {
+    width: 100%;
+}
+
 .search {
     display: block;
     width: 70%;
@@ -40,13 +44,32 @@ body {
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    margin: 1rem auto;
+    justify-content: center; 
+    padding: 2rem;
+    width: 75%;
+}
+
+.card {
+    text-align: center;
 }
 
 .details {
-    width: 3rem;
-    background-color: bisque;
-    padding: 1rem;
+    width: 10rem;
+    background-color: lightgray;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 3rem auto;
+    align-self: center;
 }
+
+@media only screen and (min-width: 678px) {
+    .banner img {
+        width: 80%;
+    }
+}
+
+
+
 
 
